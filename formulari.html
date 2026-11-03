@@ -12,13 +12,42 @@
             <input type="text" id="Pnombreapellidos" name="Pnombreapellidos">
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <label for="Nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="Nacimiento" name="Nacimiento">
+            <label for="Edad">Edad:</label>
+            <input type="number" id="Edad" name="Edad" min="16" max="99">
         </fieldset>
         <fieldset>
-            <legend></legend>   
+            <legend>Datos académicos y preferencias</legend>
+            <input type="radio" id="mati" name="torn" value="mati">
+            <label for="mati">Mañana</label>
+            <input type="radio" id="tarda" name="torn" value="tarda">
+            <label for="tarda">Tarde</label>
+            <input type="checkbox" id="LenguajeMarcas" name="asignatures" value="LenguajeMarcas">
+            <label for="LenguajeMarcas">Lenguaje de marcas</label>
+            <input type="checkbox" id="Programacion" name="asignatures" value="Programacion">
+            <label for="Programacion">Programación</label>
+            <input type="checkbox" id="BaseDatos" name="asignatures" value="BaseDatos">
+            <label for="BaseDatos">Base de datos</label>
+            <label for="Experiencia">Define tu experiencia:</label>
+            <select name="Experiencia" id="Experiencia">
+                <option value="Básico">Básico</option>
+                <option value="Intermedio">Intermedio</option>
+                <option value="Avanzado">Avanzado</option>
+            </select>
         </fieldset>
         <fieldset>
-            <legend></legend>   
-        </fieldset>>
+            <legend>Observaciones y botones</legend>   
+            <p><label for="biografia">Biografia:</label></p>
+            <textarea id="biografia" name="biografia" rows="4" cols="40">.</textarea>
+            <input type="submit" value="Submit">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto la política de privacitad y los terminos de servicio</label>
+            <button type="submit">Enviar formulario</button>
+            <button type="reset">Restablecer datos</button>
+        </fieldset>
     </form>    
 </body> 
 </html>
